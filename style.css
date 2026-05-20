@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #202124;
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+
+.contact-info {
+  font-size: 11px;
+  color: #5f6368;
+  line-height: 1.6;
+}
+
+
+.section-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #202124;
+}
+
+
+.job {
+  margin-bottom: 12px;
+}
+
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+
+.job-title {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+
+.job-dates {
+  font-size: 11px;
+  color: #5f6368;
+}
+
+
+.job-company {
+  font-size: 11px;
+  color: #5f6368;
+  margin-bottom: 4px;
+}
+
+
+.job-location {
+  font-size: 11px;
+  color: #5f6368;
+}
+
+
+.job-description {
+  font-size: 11px;
+  margin: 4px 0;
+  padding-left: 0;
+  line-height: 1.4;
+}
+
+
+.job-description ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+
+.job-description li {
+  margin-bottom: 2px;
+}
+
+
+.education-item {
+  margin-bottom: 12px;
+}
+
+
+.education-dates {
+  font-size: 11px;
+  color: #5f6368;
+  margin-bottom: 2px;
+}
+
+
+.education-school {
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+
+.education-degree {
+  font-size: 11px;
+  color: #5f6368;
+}
+
+
+.skills-text {
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+
+.skills-text ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+
+.skills-text li {
+  margin-bottom: 2px;
+}
+
+
+@media (max-width: 700px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+
+  .job-header {
+    flex-direction: column;
+  }
+
+
+  .job-dates {
+    margin-top: 2px;
+  }
+}
