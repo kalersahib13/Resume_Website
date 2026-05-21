@@ -15,10 +15,10 @@ body {
 
 
 .container {
-  max-width: 850px;
+  max-width: 650px;
   margin: 0 auto;
   background: white;
-  padding: 0 50px 40px;
+  padding: 0 30px 40px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -203,3 +203,4 @@ body {
     margin-bottom: 6px;
   }
 }
+
