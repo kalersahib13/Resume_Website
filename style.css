@@ -10,7 +10,7 @@ body {
   line-height: 1.5;
   color: #202124;
   background: #f8f9fa;
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
 
@@ -18,23 +18,20 @@ body {
   max-width: 850px;
   margin: 0 auto;
   background: white;
-  padding: 40px 50px;
+  padding: 0 50px 40px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 
 .header {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
   text-align: center;
-  margin-bottom: 20px;
+  position: relative;
+  left: -50px;
+  width: calc(100% + 100px);
+  margin: 0 0 20px;
   border-bottom: 2px solid rgb(43, 2, 2);
-  background: rgba(255, 0, 0, 0.08);
-  padding: 18px 20px;
+  background: rgba(255, 0, 0, 0.5);
+  padding: 18px 50px;
 }
 
 
@@ -42,12 +39,13 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 6px;
+  color: #ffffff;
 }
 
 
 .contact-info {
   font-size: 11px;
-  color: #5f6368;
+  color: #ffffff;
   line-height: 1.6;
 }
 
@@ -104,14 +102,14 @@ body {
 .job-description {
   font-size: 11px;
   margin: 4px 0;
-  padding-left: 0;
+  padding-left: 40px;
   line-height: 1.4;
 }
 
 
 .job-description ul {
-  list-style-position: inside;
-  padding-left: 0;
+  list-style-position: outside;
+  padding-left: 40px;
 }
 
 
@@ -152,8 +150,8 @@ body {
 
 
 .skills-text ul {
-  list-style-position: inside;
-  padding-left: 0;
+  list-style-position: outside;
+  padding-left: 40px;
 }
 
 
