@@ -70,6 +70,8 @@ body {
 .job-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
   margin-bottom: 2px;
 }
 
@@ -77,12 +79,15 @@ body {
 .job-title {
   font-weight: bold;
   font-size: 11px;
+  flex: 1;
 }
 
 
 .job-dates {
   font-size: 11px;
   color: #5f6368;
+  text-align: right;
+  white-space: nowrap;
 }
 
 
