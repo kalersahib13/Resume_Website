@@ -125,6 +125,8 @@ body {
 
 .education-item {
   margin-bottom: 12px;
+  position: relative;
+  padding-right: 130px;
 }
 
 
@@ -132,6 +134,11 @@ body {
   font-size: 11px;
   color: #5f6368;
   margin-bottom: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  white-space: nowrap;
 }
 
 
@@ -178,5 +185,18 @@ body {
 
   .job-dates {
     margin-top: 2px;
+  }
+
+
+  .education-item {
+    padding-right: 0;
+  }
+
+
+  .education-dates {
+    position: static;
+    text-align: left;
+    white-space: normal;
+    margin-bottom: 6px;
   }
 }
