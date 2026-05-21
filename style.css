@@ -72,6 +72,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  gap: 10px;
   margin-bottom: 2px;
 }
 
@@ -79,7 +80,8 @@ body {
 .job-title {
   font-weight: bold;
   font-size: 11px;
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 
@@ -88,6 +90,7 @@ body {
   color: #5f6368;
   text-align: right;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 
@@ -126,17 +129,17 @@ body {
 .education-item {
   margin-bottom: 12px;
   position: relative;
-  padding-right: 130px;
+  padding-right: 170px;
 }
 
 
 .education-dates {
   font-size: 11px;
   color: #5f6368;
-  margin-bottom: 2px;
   position: absolute;
   right: 0;
   top: 0;
+  width: 150px;
   text-align: right;
   white-space: nowrap;
 }
