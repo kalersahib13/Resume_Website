@@ -116,26 +116,6 @@
   </div>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const buttons = document.querySelectorAll('.menu-btn');
-      const sections = document.querySelectorAll('.recipe-section');
-
-      buttons.forEach(button => {
-        button.addEventListener('click', function () {
-          const targetId = this.dataset.target;
-
-          buttons.forEach(btn => btn.classList.remove('active'));
-          this.classList.add('active');
-
-          sections.forEach(section => {
-            const isActive = section.id === targetId;
-            section.classList.toggle('active-section', isActive);
-            section.classList.toggle('hidden', !isActive);
-          });
-        });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
