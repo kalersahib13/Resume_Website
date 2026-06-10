@@ -22,14 +22,21 @@
       <div class="hero-subtitle">A flavorful blend of teamwork, teaching, and kitchen service.</div>
     </div>
 
+    <div class="hero-images" aria-hidden="false">
+      <img src="images/chef1.jpg" alt="Chef cooking" class="hero-img" />
+      <img src="images/ingredients.jpg" alt="Ingredients on board" class="hero-img" />
+    </div>
+
     <div class="menu-toggle" aria-label="Resume section controls">
       <button class="menu-btn active" data-target="experience-section">Work Experience</button>
       <button class="menu-btn" data-target="education-section">Education</button>
       <button class="menu-btn" data-target="skills-section">Skills</button>
+      
     </div>
 
-    <div id="experience-section" class="recipe-section">
-      <div class="section-title">Work Experience</div>
+    <div class="section-panels">
+      <div id="experience-section" class="recipe-section active-section">
+        <div class="section-title">Work Experience</div>
       <div class="job">
         <div class="job-header">
           <span class="job-title">Reading Tutor</span>
@@ -111,6 +118,7 @@
       </div>
     </div>
   </div>
+  </div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -119,11 +127,15 @@
 
       buttons.forEach(button => {
         button.addEventListener('click', function () {
+          const targetId = this.dataset.target;
+
           buttons.forEach(btn => btn.classList.remove('active'));
           this.classList.add('active');
 
           sections.forEach(section => {
-            section.classList.toggle('hidden', section.id !== this.dataset.target);
+            const isActive = section.id === targetId;
+            section.classList.toggle('active-section', isActive);
+            section.classList.toggle('hidden', !isActive);
           });
         });
       });
