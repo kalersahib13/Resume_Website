@@ -382,6 +382,14 @@ body {
   margin-bottom: 16px;
   position: relative;
   padding-right: 180px;
+  padding-left: 16px;
+  border-left: 4px solid #f1b97d;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.education-item:hover {
+  background: rgba(242, 194, 139, 0.15);
+  border-color: #d88d55;
 }
 
 .education-dates {
